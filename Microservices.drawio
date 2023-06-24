@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-24T07:11:49.551Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="k-1xkB0WFvQt5hjQwvOH" version="21.4.0" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-06-24T08:26:45.121Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="rgnjAGtQ4Qkge0emDAyF" version="21.4.0" type="github" pages="6">
   <diagram name="Introduction" id="pCYoApze2mlJDBtpFGO-">
     <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -365,6 +365,26 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Ynw4lcelIWprAwKvhY4--1" value="&lt;h1&gt;Deploying Microservices&lt;/h1&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;CI/CD&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Continuous integration and Continuous Delivery&lt;/li&gt;&lt;li&gt;Full automation of integration and delivery stages&lt;/li&gt;&lt;li&gt;Integration&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Build&lt;/li&gt;&lt;li&gt;Unit Tests&lt;/li&gt;&lt;li&gt;Integration Tests&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Delivery/Deployment&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Staging&lt;/li&gt;&lt;li&gt;Production&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;The other two steps together need to be automated and is called as CI/CD&lt;/li&gt;&lt;li&gt;Faster release cycle&lt;/li&gt;&lt;li&gt;Reliability&lt;/li&gt;&lt;li&gt;Reporting&lt;/li&gt;&lt;li&gt;Pipelines&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Defines the set of actions to perform as part of ci/cd&lt;/li&gt;&lt;li&gt;Usually defined by YAML, with ui representation&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Make sure that there is a ci/cd engine in place.&lt;/li&gt;&lt;li&gt;Shape the steps in the pipeline&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;div&gt;Containers&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Traditional Deployment&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Code was copied and built on the production server.&lt;/li&gt;&lt;li&gt;Mismatch between prod and dev machines&lt;/li&gt;&lt;li&gt;Lot of money and time wasted&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Rest discussed before&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="92" width="1570" height="1528" as="geometry" />
+        </mxCell>
+        <mxCell id="Ynw4lcelIWprAwKvhY4--2" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XRn8RXqRfXzkYm37xfBi" name="Testing microservices">
+    <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DJkDulTgqDMNdbOy4cfz-1" value="&lt;h1&gt;Testing microservices&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="110" width="1570" height="1528" as="geometry" />
+        </mxCell>
+        <mxCell id="DJkDulTgqDMNdbOy4cfz-2" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="80" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
