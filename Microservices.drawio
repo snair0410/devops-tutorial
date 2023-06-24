@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-24T10:00:42.782Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="0NC1JaXR9zPusL1cSvsK" version="21.4.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-06-24T13:44:48.749Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="poUfFdLicQ04UNXHJkm4" version="21.4.0" type="github" pages="8">
   <diagram name="Introduction" id="pCYoApze2mlJDBtpFGO-">
     <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -433,6 +433,20 @@
         </mxCell>
         <mxCell id="2NYh3qeSky5YaLDwW-aC-11" value="Control Plane" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="600" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oJi0KFM_scOVrjcV_C58" name="Logging and Monitoring">
+    <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AEwAyoeJ4A9vOLZbjxwg-1" value="&lt;h1&gt;Logging and Monitoring&lt;/h1&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Very critical&lt;/li&gt;&lt;li&gt;Flow goes through multiple processes and hard to get a wholistic view.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Logging vs monitoring&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Logging&amp;nbsp;&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Recording the systems activity.&lt;/li&gt;&lt;li&gt;Used for auditing&lt;/li&gt;&lt;li&gt;Documenting errors&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Monitoring&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Based on systems metrics&lt;/li&gt;&lt;li&gt;Raise alerts when a certain metric is out of range.&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;li&gt;Implementing Logging&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Implement another service for logging. Single location for the logs&lt;/li&gt;&lt;li&gt;What should the logging library&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Use one library for all services.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Winston for nodejs&lt;/li&gt;&lt;li&gt;If you have various platforms then choose one library per platform.&lt;/li&gt;&lt;li&gt;Use the severity field wisely.&lt;/li&gt;&lt;li&gt;Log at least&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Timestamp&lt;/li&gt;&lt;li&gt;User performing the action&lt;/li&gt;&lt;li&gt;severity&lt;/li&gt;&lt;li&gt;the service&lt;/li&gt;&lt;li&gt;message we want to log.&lt;/li&gt;&lt;li&gt;Full stack trace.&lt;/li&gt;&lt;li&gt;corelation ID -&amp;nbsp; flow identifier / corelates events between services&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;li&gt;How should we transport the logs?&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Use queues&amp;nbsp;&lt;/li&gt;&lt;li&gt;This balances the load.&lt;/li&gt;&lt;li&gt;No performance hit on the client side&amp;nbsp;&lt;/li&gt;&lt;li&gt;Rabbit MQ/Kafka&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;What should be the logging service itself?&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Splunk or ELK stack&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;li&gt;Implementing Monitoring&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Infrastructure Monitoring&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Monitors the underlying server&lt;/li&gt;&lt;li&gt;Alerts when infra problem is detected&lt;/li&gt;&lt;li&gt;Data source is an agent in the machine&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Application Monitoring&lt;/li&gt;&lt;ol&gt;&lt;li&gt;actual application&lt;/li&gt;&lt;li&gt;set alerts when a problem is detected in application&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="110" width="1520" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="AEwAyoeJ4A9vOLZbjxwg-2" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
