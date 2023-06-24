@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-23T11:47:09.259Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="E-df-BQzgZmBkfWAPFgc" version="21.4.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-06-24T07:11:49.551Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="k-1xkB0WFvQt5hjQwvOH" version="21.4.0" type="github" pages="5">
   <diagram name="Introduction" id="pCYoApze2mlJDBtpFGO-">
     <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -357,6 +357,14 @@
         <mxCell id="76dl61g1S3oh7y2TEsYR-37" value="Edge Cases&lt;br&gt;&lt;br&gt;&lt;ol&gt;&lt;li&gt;Retrieve all customers fro NYC with total number of orders for each customer&lt;/li&gt;&lt;li&gt;One of 3 approaches&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Use data duplication - duplicate the orders into the customer db as well. very little data and read only&lt;/li&gt;&lt;li&gt;Service Query - Connect the services using Rest API&lt;/li&gt;&lt;li&gt;Aggregation Service - Use another service to aggregate the result of the queries.&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Retrieve all the orders in the system - huge volume of data&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="320" y="2021" width="1210" height="140" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="L6w5s913-4MOm55FhTix" name="Deploying microservices">
+    <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
