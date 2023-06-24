@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-24T09:24:15.795Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="B6QH-Yi5mzDrha3wKtSp" version="21.4.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-06-24T09:45:14.263Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="eFX9M4smonpGozn9VclI" version="21.4.0" type="github" pages="7">
   <diagram name="Introduction" id="pCYoApze2mlJDBtpFGO-">
     <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -393,6 +393,47 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-1" value="&lt;h1&gt;Services Mesh&lt;/h1&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Manages all service to service communication&lt;/li&gt;&lt;li&gt;Usually platform agnostic&lt;/li&gt;&lt;li&gt;Problems solved by service mesh&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Lot of communication between microservices . potential issues, timeouts, security, retries, monitoring&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Software components that sit near the service and manage all the end to end service communication. Provides all communication service.&lt;/li&gt;&lt;li&gt;The service only interacts with the service mesh&lt;/li&gt;&lt;li&gt;Service Mesh Services&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Protocol Conversion&lt;/li&gt;&lt;li&gt;Communication security&lt;/li&gt;&lt;li&gt;Authentication&lt;/li&gt;&lt;li&gt;Reliability&lt;/li&gt;&lt;li&gt;Monitoring&lt;/li&gt;&lt;li&gt;Service Discovery&lt;/li&gt;&lt;li&gt;Testing&lt;/li&gt;&lt;li&gt;Load Balancing&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;Circuit Breaker&lt;/li&gt;&lt;ol&gt;&lt;li&gt;Imagine 3 services. Service A calls Service B, and Service B calls Service C&lt;/li&gt;&lt;li&gt;Assume that Service C is unable to respond to Service B, because of timeout and this means that Service b is also unable to send a response back to Service A.&lt;/li&gt;&lt;li&gt;This cascading effect can soon become uncontrollable.&lt;/li&gt;&lt;li&gt;To prevent this a circuit breaker is placed before Service C. This immediately notifies everyone in the chain that Service C is down and thus saves time and cost.&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Service Mesh Architecture&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ol&gt;&lt;li&gt;&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="110" width="1570" height="1528" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-2" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-3" value="Service A" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-4" value="Service B" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-5" value="Mesh" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="500" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-6" value="Mesh" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="500" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2NYh3qeSky5YaLDwW-aC-7" target="2NYh3qeSky5YaLDwW-aC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-7" value="Data Plane" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="430" y="630" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2NYh3qeSky5YaLDwW-aC-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-10" value="Data Plane" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="780" y="630" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="2NYh3qeSky5YaLDwW-aC-11" target="2NYh3qeSky5YaLDwW-aC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2NYh3qeSky5YaLDwW-aC-11" target="2NYh3qeSky5YaLDwW-aC-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2NYh3qeSky5YaLDwW-aC-11" value="Control Plane" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
